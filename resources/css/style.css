@@ -1,4 +1,4 @@
-/* rgb(220, 0, 0) */
+/* rgb(220, 0, 0) OR rgb(0, 169, 227) */
 
 /* ------------------------------------------- */
 /* BASIC SETUP                                 */
@@ -48,7 +48,7 @@ h3 {
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
-    color: rgb(182, 182, 182);
+    color: #fff;
     word-spacing: 4px;
     font-size: 240%;
     letter-spacing: 1px;
@@ -82,38 +82,44 @@ h3 {
             transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-.btn:hover,
-.btn:active { background-color: rgb(197, 0, 0); }
-
 
 .btn-full:link,
 .btn-full:visited {
 
-    border: 1px solid rgb(220, 0, 0);;
-    background-color: rgb(220, 0, 0);;
+    border: 1px solid rgb(220, 0, 0);
+    background-color: rgb(220, 0, 0);
     color: #fff;
     margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid rgb(220, 0, 0);;
-    color: rgb(220, 0, 0);;
+    border: 1px solid rgb(220, 0, 0);
+    color: rgb(220, 0, 0);
 }
 
-
+.btn:hover,
+.btn:active { background-color: #ba0000; }
 
 .btn-full:hover,
 .btn-full:active {
-    border: 1px solid #cf6d17;
+    border: 1px solid #ba0000;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1px solid #cf6d17;
+    border: 1px solid #ba0000;
     color: #fff;
 }
 
+/* ------------- ICONS -------------------*/
+
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #dc0000;
+    margin-bottom: 10px;
+}
 
 
 /* ------------------------------------------- */
@@ -121,8 +127,8 @@ h3 {
 /* ------------------------------------------- */
 
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0,0,0,0.7))), url(img/jenny-hill-202432-unsplash.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url(img/jenny-hill-202432-unsplash.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0,0,0,0.7))), url(img/jenny-hill-202432-unsplash-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url(img/jenny-hill-202432-unsplash-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -161,8 +167,8 @@ header {
 
 .main-nav li a:link,
 .main-nav li a:visited {
-    padding: 2px 0;
-    color: rgb(0, 169, 227);
+    padding: 4px 0;
+    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
